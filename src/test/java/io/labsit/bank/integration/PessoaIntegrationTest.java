@@ -30,7 +30,7 @@ public class PessoaIntegrationTest {
 	@Test
 	void deveCadastrarClienteComSucesso_QuandoDadosValidos() {
 		
-		ClienteDTO dto = ClienteDTOFactory.criarClientePessoaFisicaDTOComCPFValido();
+		ClienteDTO dto = ClienteDTOFactory.criarClientePessoaFisicaDTOComCPFValidoIT();
 		ResponseEntity<ClienteDTO> retorno = restTemplate.postForEntity("/clientes", dto, ClienteDTO.class);
 		
 		assertThat(retorno.getStatusCode()).isEqualTo(HttpStatus.CREATED);

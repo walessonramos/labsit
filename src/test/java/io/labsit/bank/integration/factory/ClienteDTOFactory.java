@@ -13,6 +13,14 @@ public class ClienteDTOFactory {
 		return dto;
 	}
 	
+	public static ClienteDTO criarClientePessoaFisicaDTOComCPFValidoIT() {
+		ClienteDTO dto = new ClienteDTO();
+		dto.setNome("Cliente Teste Integracao");
+		dto.setCpfCnpj("145.343.260-41");
+		dto.setTipoPessoa(TipoPessoaEnum.PESSOA_FISICA);
+		return dto;
+	}
+	
 	public static ClienteDTO criarClientePessoaFisicaDTOComCPFInvalido() {
 		ClienteDTO dto = new ClienteDTO();
 		dto.setNome("Cliente Test");

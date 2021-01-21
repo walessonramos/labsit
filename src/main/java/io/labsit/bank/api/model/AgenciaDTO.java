@@ -2,8 +2,8 @@ package io.labsit.bank.api.model;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -16,7 +16,7 @@ public class AgenciaDTO implements Serializable{
 	private Long id;
 	
 	@NotNull(message = "Informe o número da agência")
-//	@Size(message = "O número da agência deve ter 4 dígitos", max = 4, min = 4)
+	@Digits(integer = 4, fraction = 0, message = "O número da agência deve ter até 4 dígitos")
 	private Integer numeroAgencia;
 
 	public Integer getNumeroAgencia() {

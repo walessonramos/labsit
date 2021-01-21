@@ -19,7 +19,7 @@ public class Agencia implements Serializable{
 	@Column(name = "T_AGENCIA_ID")
 	private Long id;
 	
-	@Column(name = "T_AGENCIA_NR", unique = true)
+	@Column(name = "T_AGENCIA_NR")
 	private Integer numero;
 	
 	public Long getId() {

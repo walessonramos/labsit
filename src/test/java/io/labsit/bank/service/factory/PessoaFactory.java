@@ -21,7 +21,7 @@ public class PessoaFactory {
 		pessoaRetorno.setConta(pessoa.getConta());
 		pessoaRetorno.setNome(pessoa.getNome());
 		pessoaRetorno.setNumeroDocumento(pessoa.getNumeroDocumento());
-		return pessoa;
+		return pessoaRetorno;
 	}
 	
 	public static PessoaFisica criarPessoaFisicaComCPFInvalido() {
